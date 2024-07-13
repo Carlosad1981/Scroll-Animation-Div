@@ -1,0 +1,8 @@
+.cd-animated-container {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.cd-animated-div {
+  transition: opacity 2s;
+}
