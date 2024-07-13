@@ -31,28 +31,34 @@ Os elementos div com a classe .cn-animation-div podem ter os seguintes atributos
    - **data-central-height**: (opcional) A altura da zona central onde a div deve ser totalmente visível (padrão: 400).
 
 
-## Exemplo de Uso
-```javascript (React)
-import React, { useRef } from 'react';
-import useScrollAnimatedDivs from './hooks/useScrollAnimatedDivs'; //ATENÇÃO: Supondo que o hook esteja na pasta "src/hooks/" (troque a pasta conforme necessário)
-
+## Exemplo de Uso com o componente <ScrollAnimatedDivs> ... </ScrollAnimatedDivs>
+```javascript
+import ScrollAnimatedDivs from './components/AnimatedDiv/ScrollAnimatedDivs';
 const AnimatedDivsContainer = () => {
-    const containerRef = useRef(null);
-    useScrollAnimatedDivs(containerRef);
-
     return (
-        <>
+        <ScrollAnimatedDivs>
             {/* Elementos com a classe 'cd-animated-div' */}
-            <div className="cd-animated-div" data-max-offset="50" data-direction="vertical" data-opacity-transition="0.5" data-transform-transition="0.5" data-offset-position="200" data-central-height="400">
-                {/* Conteúdo do elemento */}
+            <div className="cd-animated-div"
+                    data-max-offset="50"
+                    data-direction="vertical"
+                    data-opacity-transition="0.5"
+                    data-transform-transition="0.5"
+                    data-offset-position="200"
+                    data-central-height="400">
+                {/* Eexmplo de conteúdo do elemento */}
+                <p>Criado por Carlos Duarte (@Carlosad1981)</p>
             </div>
             {/* Outros elementos semelhantes */}
-        <>
+        </ScrollAnimatedDivs>
     );
 };
 
 export default AnimatedDivsContainer;
 ```
+
+## Histórico de Versões
+1. **v1.0.0**:
+    - Lançamento inicial do useScrollAnimatedDivs com funcionalidades básicas de opacidade e transformação de deslocamento.
 
 ## Contribuindo
    - Contribuições são bem-vindas! Sinta-se à vontade para me enviar uma mensagem.
