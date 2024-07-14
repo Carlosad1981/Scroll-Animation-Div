@@ -57,7 +57,11 @@ export default AnimatedDivsContainer;
 ```
 
 ## Histórico de Versões
-1. **v1.0.0**:
+1. **v1.1.1**:
+    - Melhoria na performance da movimentação com o uso do window.requestAnimationFrame().
+    - Melhoria na documentação do Hook.
+
+2. **v1.0.0**:
     - Lançamento inicial do useScrollAnimatedDivs com funcionalidades básicas de opacidade e transformação de deslocamento.
 
 ## Contribuindo
